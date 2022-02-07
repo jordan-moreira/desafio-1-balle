@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <input type="text" placeholder="digite seu nome" class="nome">
+    <input type="number" placeholder="digite sua idade" class="idade">
+    <input type="text" placeholder="o que voce esta aprendendo" class="linguagem">
+    <button onclick="mostrar()">clique</button>
+</body>
+<script>
+    
+    function mostrar(){
+        const nome= document.querySelector(".nome").value
+        const idade= document.querySelector(".idade").value
+        const linguagem= document.querySelector(".linguagem").value 
+        alert(`Ola ${nome}, voce tem ${idade} anos e ja esta aprendendo ${linguagem}!`)
+    }
+</script>
+</html>
